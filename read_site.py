@@ -53,7 +53,6 @@ try:
     for i in range(0,num):
         k=k+"sem"+str(i+1)+"cgpa float ," 
     k=k+'ygpa float '
-    #sql=sql+k+") values "
     c=c+k+",primary key (Roll_No))"
     cursor.execute(c)
     print("Given table not present new table Created")
@@ -117,8 +116,6 @@ for i in range(roll_s,roll_e+1):
 mydb.commit()
 dr.get("http://localhost/phpmyadmin/ ")
 dr.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[2]/a').click()
-'''/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[2]/div[4]/ul/li[1]/a
-/html/body/div[1]/div[3]/div[2]/div[3]/ul/li[2]/div[4]/ul/li[3]/a'''
 while 1:
     ch=input("Wnt to convert the sql file to csv format(y/n): ")
     if ch=='y' or ch=='Y':
